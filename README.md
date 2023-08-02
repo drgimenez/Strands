@@ -8,42 +8,42 @@ This is my sample repository for the admission test for the position "Senior Sma
 #### Deployed contract address on Sepolia testnet
 
 * Strands contract address: 0x9240C980f1090e3bd54038bDe4D63e489C429cf6
-* ![Link to the contract verified in EtherScan:](https://sepolia.etherscan.io/address/0x9240C980f1090e3bd54038bDe4D63e489C429cf6#code)
+* [Link to the contract verified in EtherScan:](https://sepolia.etherscan.io/address/0x9240C980f1090e3bd54038bDe4D63e489C429cf6#code)
 
 #### Folders
 
-* src/contracts
+* **src/contracts**
     Contains the contracts used in the solution
 
-* src/interfaces
+* **src/interfaces**
     Contains the interface defined for the solution
 
-* scripts
+* **scripts**
     Contains the deploy file to deploy the contract to blockchain networks
 
-* test
+* **test**
     Contains the test files to test the defined functionalities
 
 #### Files
 
-* src/contracts/Strands.sol
+* **src/contracts/Strands.sol**
     Contains the contract that implements the interface defined with the functions requested for the test. 
     Include a description in the comments.
 
-* src/contracts/ERC20_Token.sol
+* **src/contracts/ERC20_Token.sol**
     This contract inherits from the OpenZeppelin ERC20 contract to emulate the operation of a compatible ERC20 token, in order to test the functionalities requested for the test.
 
-* src/interfaces/IStrands.sol
+* **src/interfaces/IStrands.sol**
     Contains the interface defined with the functions requested for the test. Include a description in the comments.
 
-* scripts/deploy.js
+* **scripts/deploy.js**
     Contains the script to deploy the contract to blockchain networks
 
-* test/transferEth.test.js
+* **test/transferEth.test.js**
     Contains the tests on the requested functionality "transferEth". 
     For these tests it was assumed that the amount to be transferred from the contract would be an amount received at the time of calling the function
 
-* test/transferToken.test.js
+* **test/transferToken.test.js**
     Contains the tests on the requested functionality "transferToken". 
 
 ### Used libraries
