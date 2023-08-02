@@ -9,6 +9,8 @@ This is my sample repository for the admission test for the position "Senior Sma
 
 * Strands contract address: 0x9240C980f1090e3bd54038bDe4D63e489C429cf6
 * [Link to the contract verified in EtherScan:](https://sepolia.etherscan.io/address/0x9240C980f1090e3bd54038bDe4D63e489C429cf6#code)
+* [Token transfer transaction link:](https://sepolia.etherscan.io/tx/0xf3a7921b8f56538d422cd02943fe2b39d0a1e238277e0e852e833eb64f9c3593)
+* [Eth transfer transaction link:](https://sepolia.etherscan.io/tx/0xd3cd1eb926a65227f5aa7c70885deec0661ac864ded60a11d56b5f5a3d12e8cf)
 
 #### Folders
 
@@ -19,7 +21,8 @@ This is my sample repository for the admission test for the position "Senior Sma
     Contains the interface defined for the solution
 
 * **scripts**
-    Contains the deploy file to deploy the contract to blockchain networks
+    Contains the deploy file to deploy the contract to blockchain networks and the the scripts 
+    to perform the required transactions that execute the requested functions on the Sepolia testnet
 
 * **test**
     Contains the test files to test the defined functionalities
@@ -38,6 +41,15 @@ This is my sample repository for the admission test for the position "Senior Sma
 
 * **scripts/deploy.js**
     Contains the script to deploy the contract to blockchain networks
+
+* **scripts/deployERC20.js**
+    Contains the script to deploy the ERC_token contract to blockchain networks
+
+* **scripts/transferTokenTransactions.js**
+    Contains the script to execute the token transfer using the requested transferToken method
+
+* **scripts/ethTransferTransactions.js**
+    Contains the script to execute the eth transfer using the requested transferETH method
 
 * **test/transferEth.test.js**
     Contains the tests on the requested functionality "transferEth". 
@@ -88,3 +100,19 @@ The tests carried out cover 100% of the code lines
 Test run on virtual hardhat network:
 
 ![Alt text](image-1.png)
+
+### Requested operations
+
+#### transferToken
+
+* Transaction hash on the Sepolia network: 0xf3a7921b8f56538d422cd02943fe2b39d0a1e238277e0e852e833eb64f9c3593
+* Amount of tokens transferred: 1
+
+![Alt text](image-2.png)
+
+#### transferEth
+
+* Transaction hash on the Sepolia network: 0xd3cd1eb926a65227f5aa7c70885deec0661ac864ded60a11d56b5f5a3d12e8cf
+* Amount transferred: 1000 wei
+
+![Alt text](image-3.png)
