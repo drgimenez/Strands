@@ -8,9 +8,9 @@ This is my sample repository for the admission test for the position "Senior Sma
 #### Deployed contract address on Sepolia testnet
 
 * Strands contract address: 0x9240C980f1090e3bd54038bDe4D63e489C429cf6
-* [Link to the contract verified in EtherScan:](https://sepolia.etherscan.io/address/0x9240C980f1090e3bd54038bDe4D63e489C429cf6#code)
-* [Token transfer transaction link:](https://sepolia.etherscan.io/tx/0xf3a7921b8f56538d422cd02943fe2b39d0a1e238277e0e852e833eb64f9c3593)
-* [Eth transfer transaction link:](https://sepolia.etherscan.io/tx/0xd3cd1eb926a65227f5aa7c70885deec0661ac864ded60a11d56b5f5a3d12e8cf)
+* [Link to the contract verified in LineaScan:](https://goerli.lineascan.build/address/0x0d1d5edfedde99f0a63cfb82bede7bcd45e2d576#code)
+* [Token transfer transaction link:](https://goerli.lineascan.build/tx/0x700eb148aec6c87e1d0d91a986ff4b722fdd039387631cf0c2bf81a2cb38f09c)
+* [Eth transfer transaction link:](https://goerli.lineascan.build/tx/0xd534ab44188c5109e13799b1554614fd7e348964710f8902e9fa72d9e8191ec2)
 
 #### Folders
 
@@ -65,7 +65,7 @@ This is my sample repository for the admission test for the position "Senior Sma
 * chai: ^4.3.7,
 * ethereum-waffle: ^4.0.10
 * hardhat-contract-sizer: ^2.8.0
-* @nomicfoundation/hardhat-verify: ^1.1.0
+* @nomiclabs/hardhat-etherscan: ^3.1.7
 
 ### Repository setup instructions
 
@@ -105,14 +105,14 @@ Test run on virtual hardhat network:
 
 #### transferToken
 
-* Transaction hash on the Sepolia network: 0xf3a7921b8f56538d422cd02943fe2b39d0a1e238277e0e852e833eb64f9c3593
+* Transaction hash on the Linea network: 0x700eb148aec6c87e1d0d91a986ff4b722fdd039387631cf0c2bf81a2cb38f09c
 * Amount of tokens transferred: 1
 
 ![Alt text](image-2.png)
 
 #### transferEth
 
-* Transaction hash on the Sepolia network: 0xd3cd1eb926a65227f5aa7c70885deec0661ac864ded60a11d56b5f5a3d12e8cf
+* Transaction hash on the Linea network: 0xd534ab44188c5109e13799b1554614fd7e348964710f8902e9fa72d9e8191ec2
 * Amount transferred: 1000 wei
 
 ![Alt text](image-3.png)

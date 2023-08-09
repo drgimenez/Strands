@@ -1,14 +1,14 @@
 require('dotenv').config();
 require('@nomiclabs/hardhat-ethers');
 require('solidity-coverage');
-require("@nomicfoundation/hardhat-verify");
+require("@nomiclabs/hardhat-etherscan");
 
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.21",
+  solidity: "0.8.19",
   paths: {
     sources: "./src",
     tests: "./test",
@@ -16,18 +16,27 @@ module.exports = {
     artifacts: "./artifacts"
   },
   networks: {
-    sepolia: {
-        chainId:  11155111,
+    linea: {
+        chainId:  59140,
         timeout:  20000,
-        gasPrice: 8000000000,
         gas:      "auto",
-        name:     "Sepolia",		
-		url:      process.env.SEPOLIA_ACCESSPOINT_URL,
-		from:     process.env.SEPOLIA_ACCOUNT,
-        accounts: [process.env.SEPOLIA_PRIVATE_KEY]
+        name:     "Linea",		
+		url:      process.env.LINEA_ACCESSPOINT_URL,
+		from:     process.env.LINEA_ACCOUNT,
+        accounts: [process.env.LINEA_PRIVATE_KEY]
 	  }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_APIKEY
+    apiKey: process.env.LINEA_APIKEY,
+    customChains: [
+      {
+        network: "linea",
+        chainId: 59140,
+        urls: {
+          apiURL: "https://api-testnet.lineascan.build/api",
+          browserURL: "https://goerli.lineascan.build/"
+        }
+      }
+    ]
   }
 };
