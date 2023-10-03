@@ -1,8 +1,6 @@
 # Strands
 ##### Author: David Gimenez Gutierrez
 
-This is my sample repository for the admission test for the position "Senior Smart Contract Developer at Strands"
-
 ### Main project information
 
 #### Deployed contract address on Sepolia testnet
